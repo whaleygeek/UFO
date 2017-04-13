@@ -19,6 +19,22 @@ and the ATTiny85 arduino libraries are loaded into the Arduino IDE. Note also th
 the fuses are programmed to use the internal RC clock set at 8MHz, and an avrdude
 script is used to program these fuses.
 
+# Other information
+
+Information about how to program the ATTiny85 using the Arduino UNO board as a programmer,
+and also for the plug-in for the Arduino IDE that allows you to build software for it.
+
+https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829
+
+If you use the above instructions, you don't need to waste Flash memory loading a
+bootloader, and you get all resources available to your program.
+
+Note that the write_fuses file in this project configures the onboard config fuses
+so that the RC clock runs at the right rate (so that delay statements run for the
+right duration)
+
+
+
 David Whale
 
 2nd Jan, 2016
